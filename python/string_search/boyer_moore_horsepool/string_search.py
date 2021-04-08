@@ -7,7 +7,7 @@ class BoyerMoore:
     def preprocess(self):
         pattern_length = len(self.pattern)
         table = {
-            self.pattern[i]: (pattern_length - 1 -i) 
+            self.pattern[i]: (pattern_length - 1 - i) 
             for i in range(pattern_length - 1)
         }
         return table
